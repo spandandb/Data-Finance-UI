@@ -32,7 +32,7 @@ function Navbar() {
             : 'fixed hidden'
         }
       >
-        <h1 className='text-2xl font-semibold text-green-400 m-4'>Menu</h1>
+        <h1 className='text-3xl font-semibold text-green-400 m-4'>Menu</h1>
         <ul className='pt-5 uppercase'>
           <li className='p-4 border-b border-gray-500'>Home</li>
           <li className='p-4 border-b border-gray-500'>Company</li>
