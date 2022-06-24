@@ -20,7 +20,9 @@ function Navbar() {
   window.addEventListener('scroll', toggleNavBackground);
 
   return (
-    <div className={`w-full top-0 sticky ${navColor ? 'bg-black/90' : ''}`}>
+    <div
+      className={`w-full top-0 sticky z-20 ${navColor ? 'bg-black/90' : ''}`}
+    >
       <div className='text-white flex justify-between items-center h-20 mx-auto max-w-[1240px] px-4'>
         <h1 className='text-3xl font-bold text-green-400'>
           Data<span className='text-white'>Fin</span>
