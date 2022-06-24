@@ -4,6 +4,11 @@ import analytics from '../images/analytics.svg';
 export default function Analytics() {
   return (
     <div className='w-full bg-white py-16 px-4'>
+      <div className='max-w-[1240px] mx-auto text-center md:text-left'>
+        <h2 className='text-4xl md:text-5xl font-bold mb-10'>
+          What We Provide ?
+        </h2>
+      </div>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
         <img src={analytics} alt='' className='w-2/3 mx-auto my-4' />
         <div className='flex flex-col justify-center items-center my-4 text-center'>

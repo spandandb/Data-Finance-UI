@@ -24,16 +24,21 @@ function Navbar() {
       className={`w-full top-0 sticky z-20 ${navColor ? 'bg-black/90' : ''}`}
     >
       <div className='text-white flex justify-between items-center h-20 mx-auto max-w-[1240px] px-4'>
-        <h1 className='text-3xl font-bold text-green-400'>
+        <h1 className='text-3xl font-bold text-green-400 cursor-not-allowed'>
           Data<span className='text-white'>Fin</span>
           <span className='text-yellow-300'>.</span>
         </h1>
-        <ul className='hidden md:flex'>
-          <li className='p-4'>Home</li>
-          <li className='p-4'>Company</li>
-          <li className='p-4'>Resources</li>
-          <li className='p-4'>About</li>
-          <li className='p-4'>Contact</li>
+        <ul className='hidden md:flex md:items-center'>
+          <li className='p-4 cursor-pointer'>Home</li>
+          <li className='p-4 cursor-pointer'>Service</li>
+          <li className='p-4 cursor-pointer'>Newsletter</li>
+          <li className='p-4 cursor-pointer'>Pricing</li>
+          <li className='p-4 cursor-pointer'>Contact Us</li>
+          <li className='p-4 cursor-pointer'>
+            <button className='px-6 h-10 bg-gradient-to-r from-green-400 to-yellow-300 text-black rounded-md font-semibold border border-green-400 hover:shadow-lg hover:shadow-yellow-300'>
+              Log in
+            </button>
+          </li>
         </ul>
         <div onClick={handleNav} className='md:hidden'>
           {!nav ? (
@@ -51,11 +56,26 @@ function Navbar() {
         >
           <h1 className='text-3xl font-semibold text-green-400 m-4'>Menu</h1>
           <ul className='pt-5 uppercase'>
-            <li className='p-4 border-b border-gray-500'>Home</li>
-            <li className='p-4 border-b border-gray-500'>Company</li>
-            <li className='p-4 border-b border-gray-500'>Resources</li>
-            <li className='p-4 border-b border-gray-500'>About</li>
-            <li className='p-4'>Contact</li>
+            <li className='p-4 border-b border-gray-500 cursor-pointer'>
+              Home
+            </li>
+            <li className='p-4 border-b border-gray-500 cursor-pointer'>
+              Service
+            </li>
+            <li className='p-4 border-b border-gray-500 cursor-pointer'>
+              Newsletter
+            </li>
+            <li className='p-4 border-b border-gray-500 cursor-pointer'>
+              Pricing
+            </li>
+            <li className='p-4 border-b border-gray-500 cursor-pointer'>
+              Contact Us
+            </li>
+            <li className='p-4'>
+              <button className='px-6 h-10 bg-gradient-to-r from-green-400 to-yellow-300 text-black rounded-md font-semibold border border-green-400 hover:shadow-lg hover:shadow-yellow-300'>
+                Log in
+              </button>
+            </li>
           </ul>
         </div>
       </div>

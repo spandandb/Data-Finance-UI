@@ -2,7 +2,12 @@ import React from 'react';
 
 export default function Newsletter() {
   return (
-    <div className='w-full py-16 text-white bg-[#000300]'>
+    <div className='w-full py-20 text-white bg-[#000300]'>
+      <div className='max-w-[1240px] mx-auto text-center md:text-left'>
+        <h2 className='text-4xl text-green-400 md:text-5xl font-bold mb-10'>
+          Newsletter
+        </h2>
+      </div>
       <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
         <div className=' lg:col-span-2 text-center'>
           <div className='max-w-[90%] mx-auto'>
@@ -10,7 +15,7 @@ export default function Newsletter() {
               Want tips & tricks to optimize your flow ?
             </h2>
             <p className='py-2 font-semibold lg:text-left'>
-              Sign up to our newsletter program and stay up to date.
+              Sign up to our newsletter program for FREE and stay up to date.
             </p>
           </div>
         </div>

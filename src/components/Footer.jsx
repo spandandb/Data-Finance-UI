@@ -7,7 +7,7 @@ export default function Footer() {
     <div className='w-full bg-[#000300]'>
       <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-white'>
         <div className=''>
-          <h1 className='text-3xl font-bold text-green-400 mb-4'>
+          <h1 className='text-3xl font-bold text-green-400 mb-4 cursor-not-allowed'>
             Data<span className='text-white'>Fin</span>
             <span className='text-yellow-300'>.</span>
           </h1>
@@ -47,16 +47,17 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        <hr className='lg:hidden border border-yellow-300' />
         <div className='lg:col-span-2 flex justify-around mt-10'>
           <div>
             <h6 className='font-semibold underline text-gray-400 mb-3'>
               Solutions
             </h6>
             <ul>
-              <li className='py-2 text-sm'>Analytics</li>
-              <li className='py-2 text-sm'>Marketing</li>
-              <li className='py-2 text-sm'>Commerce</li>
-              <li className='py-2 text-sm'>Insights</li>
+              <li className='py-2 text-sm cursor-pointer'>Analytics</li>
+              <li className='py-2 text-sm cursor-pointer'>Marketing</li>
+              <li className='py-2 text-sm cursor-pointer'>Commerce</li>
+              <li className='py-2 text-sm cursor-pointer'>Insights</li>
             </ul>
           </div>
           <div>
@@ -64,10 +65,10 @@ export default function Footer() {
               Support
             </h6>
             <ul>
-              <li className='py-2 text-sm'>Pricing</li>
-              <li className='py-2 text-sm'>Documentation</li>
-              <li className='py-2 text-sm'>Guides</li>
-              <li className='py-2 text-sm'>API Status</li>
+              <li className='py-2 text-sm cursor-pointer'>Pricing</li>
+              <li className='py-2 text-sm cursor-pointer'>Documentation</li>
+              <li className='py-2 text-sm cursor-pointer'>Guides</li>
+              <li className='py-2 text-sm cursor-pointer'>API Status</li>
             </ul>
           </div>
           <div>
@@ -75,10 +76,10 @@ export default function Footer() {
               Company
             </h6>
             <ul>
-              <li className='py-2 text-sm'>About</li>
-              <li className='py-2 text-sm'>Jobs</li>
-              <li className='py-2 text-sm'>Careers</li>
-              <li className='py-2 text-sm'>Press</li>
+              <li className='py-2 text-sm cursor-pointer'>About</li>
+              <li className='py-2 text-sm cursor-pointer'>Jobs</li>
+              <li className='py-2 text-sm cursor-pointer'>Careers</li>
+              <li className='py-2 text-sm cursor-pointer'>Press</li>
             </ul>
           </div>
           <div>
@@ -86,13 +87,16 @@ export default function Footer() {
               Legal
             </h6>
             <ul>
-              <li className='py-2 text-sm'>Claim</li>
-              <li className='py-2 text-sm'>Policy</li>
-              <li className='py-2 text-sm'>Terms</li>
+              <li className='py-2 text-sm cursor-pointer'>Claim</li>
+              <li className='py-2 text-sm cursor-pointer'>Policy</li>
+              <li className='py-2 text-sm cursor-pointer'>Terms</li>
             </ul>
           </div>
         </div>
       </div>
+      <p className='font-normal py-1 text-center bg-green-400'>
+        ©️ 2022 DataFin. | All Rights Reserved
+      </p>
     </div>
   );
 }
