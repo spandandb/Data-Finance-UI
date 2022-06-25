@@ -54,10 +54,18 @@ export default function Footer() {
               Solutions
             </h6>
             <ul>
-              <li className='py-2 text-sm cursor-pointer'>Analytics</li>
-              <li className='py-2 text-sm cursor-pointer'>Marketing</li>
-              <li className='py-2 text-sm cursor-pointer'>Commerce</li>
-              <li className='py-2 text-sm cursor-pointer'>Insights</li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Analytics
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Marketing
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Commerce
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Insights
+              </li>
             </ul>
           </div>
           <div>
@@ -65,10 +73,18 @@ export default function Footer() {
               Support
             </h6>
             <ul>
-              <li className='py-2 text-sm cursor-pointer'>Pricing</li>
-              <li className='py-2 text-sm cursor-pointer'>Documentation</li>
-              <li className='py-2 text-sm cursor-pointer'>Guides</li>
-              <li className='py-2 text-sm cursor-pointer'>API Status</li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Pricing
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Documentation
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Guides
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                API Status
+              </li>
             </ul>
           </div>
           <div>
@@ -76,10 +92,18 @@ export default function Footer() {
               Company
             </h6>
             <ul>
-              <li className='py-2 text-sm cursor-pointer'>About</li>
-              <li className='py-2 text-sm cursor-pointer'>Jobs</li>
-              <li className='py-2 text-sm cursor-pointer'>Careers</li>
-              <li className='py-2 text-sm cursor-pointer'>Press</li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                About
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Jobs
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Careers
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Press
+              </li>
             </ul>
           </div>
           <div>
@@ -87,9 +111,15 @@ export default function Footer() {
               Legal
             </h6>
             <ul>
-              <li className='py-2 text-sm cursor-pointer'>Claim</li>
-              <li className='py-2 text-sm cursor-pointer'>Policy</li>
-              <li className='py-2 text-sm cursor-pointer'>Terms</li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Claim
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Policy
+              </li>
+              <li className='py-2 text-sm cursor-pointer hover:text-yellow-300'>
+                Terms
+              </li>
             </ul>
           </div>
         </div>

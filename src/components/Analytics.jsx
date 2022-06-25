@@ -3,7 +3,7 @@ import analytics from '../images/analytics.svg';
 
 export default function Analytics() {
   return (
-    <div className='w-full bg-white py-16 px-4'>
+    <div className='w-full bg-white py-16 px-4' id='service'>
       <div className='max-w-[1240px] mx-auto text-center md:text-left'>
         <h2 className='text-4xl md:text-5xl font-bold mb-10'>
           What We Provide ?

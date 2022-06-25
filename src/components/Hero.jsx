@@ -4,15 +4,15 @@ import Typed from 'react-typed';
 
 export default function Hero() {
   return (
-    <div className='w-full h-screen top-0'>
+    <div className='w-full h-[90vh] top-0' id='home'>
       <video
-        className='object-cover h-screen w-full absolute -z-10 top-0'
+        className='object-cover h-full w-full absolute -z-10 top-0'
         src={bgVid}
         autoPlay
         loop
         muted
       />
-      <div className='max-w-[800px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
+      <div className='max-w-[800px] w-full h-full mx-auto text-center flex flex-col justify-center'>
         <p className='text-white font-bold p-2 text-lg md:text-2xl'>
           GROWING WITH DATA ANALYTICS
         </p>

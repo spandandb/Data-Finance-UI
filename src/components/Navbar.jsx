@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Fill, RiCloseFill } from 'react-icons/ri';
+import { Link } from 'react-scroll';
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -7,6 +8,10 @@ function Navbar() {
 
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const handleClick = () => {
+    setNav(false);
   };
 
   const toggleNavBackground = () => {
@@ -29,11 +34,58 @@ function Navbar() {
           <span className='text-yellow-300'>.</span>
         </h1>
         <ul className='hidden md:flex md:items-center'>
-          <li className='p-4 cursor-pointer'>Home</li>
-          <li className='p-4 cursor-pointer'>Service</li>
-          <li className='p-4 cursor-pointer'>Newsletter</li>
-          <li className='p-4 cursor-pointer'>Pricing</li>
-          <li className='p-4 cursor-pointer'>Contact Us</li>
+          <Link
+            to='home'
+            activeClass='text-yellow-300 border-b-4 border-yellow-300'
+            className='hover:text-yellow-300'
+            spy={true}
+            smooth={true}
+            exact={true}
+            offset={-80}
+            duration={500}
+            hashSpy
+          >
+            <li className='p-4 cursor-pointer'>Home</li>
+          </Link>
+          <Link
+            to='service'
+            activeClass='text-yellow-300 border-b-4 border-yellow-300'
+            className='hover:text-yellow-300'
+            spy={true}
+            exact={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            hashSpy
+          >
+            <li className='p-4 cursor-pointer'>Service</li>
+          </Link>
+          <Link
+            to='newsletter'
+            activeClass='text-yellow-300 border-b-4 border-yellow-300'
+            className='hover:text-yellow-300'
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            exact={true}
+            hashSpy
+          >
+            <li className='p-4 cursor-pointer'>Newsletter</li>
+          </Link>
+          <Link
+            activeClass='text-yellow-300 border-b-4 border-yellow-300'
+            className='hover:text-yellow-300'
+            to='pricing'
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            exact={true}
+            hashSpy
+          >
+            <li className='p-4 cursor-pointer'>Pricing</li>
+          </Link>
           <li className='p-4 cursor-pointer'>
             <button className='px-6 h-10 bg-gradient-to-r from-green-400 to-yellow-300 text-black rounded-md font-semibold border border-green-400 hover:shadow-lg hover:shadow-yellow-300'>
               Log in
@@ -56,21 +108,62 @@ function Navbar() {
         >
           <h1 className='text-3xl font-semibold text-green-400 m-4'>Menu</h1>
           <ul className='pt-5 uppercase'>
-            <li className='p-4 border-b border-gray-500 cursor-pointer'>
-              Home
-            </li>
-            <li className='p-4 border-b border-gray-500 cursor-pointer'>
-              Service
-            </li>
-            <li className='p-4 border-b border-gray-500 cursor-pointer'>
-              Newsletter
-            </li>
-            <li className='p-4 border-b border-gray-500 cursor-pointer'>
-              Pricing
-            </li>
-            <li className='p-4 border-b border-gray-500 cursor-pointer'>
-              Contact Us
-            </li>
+            <Link
+              activeClass='hover:text-yellow-300 text-yellow-300'
+              className='hover:text-green-400'
+              to='home'
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={handleClick}
+            >
+              <li className='p-4 border-b border-gray-500 cursor-pointer'>
+                Home
+              </li>
+            </Link>
+            <Link
+              activeClass='hover:text-yellow-300 text-yellow-300'
+              className='hover:text-green-400'
+              to='service'
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={handleClick}
+            >
+              <li className='p-4 border-b border-gray-500 cursor-pointer'>
+                Service
+              </li>
+            </Link>
+            <Link
+              activeClass='hover:text-yellow-300 text-yellow-300'
+              className='hover:text-green-400'
+              to='newsletter'
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={handleClick}
+            >
+              <li className='p-4 border-b border-gray-500 cursor-pointer'>
+                Newsletter
+              </li>
+            </Link>
+            <Link
+              activeClass='hover:text-yellow-300 text-yellow-300'
+              className='hover:text-green-400'
+              to='pricing'
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={handleClick}
+            >
+              <li className='p-4 border-b border-gray-500 cursor-pointer'>
+                Pricing
+              </li>
+            </Link>
             <li className='p-4'>
               <button className='px-6 h-10 bg-gradient-to-r from-green-400 to-yellow-300 text-black rounded-md font-semibold border border-green-400 hover:shadow-lg hover:shadow-yellow-300'>
                 Log in

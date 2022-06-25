@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function Newsletter() {
   return (
-    <div className='w-full py-20 text-white bg-[#000300]'>
-      <div className='max-w-[1240px] mx-auto text-center md:text-left'>
-        <h2 className='text-4xl text-green-400 md:text-5xl font-bold mb-10'>
+    <div className='w-full  py-16 text-white bg-[#000300]' id='newsletter'>
+      <div className='max-w-[1240px] mx-auto text-center lg:text-right'>
+        <h2 className='text-4xl text-green-400 md:text-5xl font-bold my-10 mx-4'>
           Newsletter
         </h2>
       </div>
-      <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
+      <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 my-20'>
         <div className=' lg:col-span-2 text-center'>
           <div className='max-w-[90%] mx-auto'>
             <h2 className='font-bold py-2 lg:text-4xl md:text-3xl sm:text-2xl text-xl lg:text-left'>

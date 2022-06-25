@@ -5,7 +5,7 @@ import triple from '../images/triple.png';
 
 export default function Cards() {
   return (
-    <div className='w-full py-40 px-4 bg-white'>
+    <div className='w-full py-16 px-4 bg-white' id='pricing'>
       <div className='max-w-[1240px] mx-auto text-center md:text-left'>
         <h2 className='text-4xl md:text-5xl font-bold mb-10'>Pricing</h2>
       </div>
@@ -22,7 +22,7 @@ export default function Cards() {
             <p className='py-2 border-b-2 mx-8'>Send upto 2 GB</p>
           </div>
           <button className='bg-green-400 w-fit rounded-md px-6 py-2 m-6 mx-auto text-black text-md md:text-md font-medium border-2 border-green-400 hover:text-black hover:bg-transparent hover:border-green-400'>
-            Start Trial
+            Buy Now
           </button>
         </div>
 
@@ -38,7 +38,7 @@ export default function Cards() {
             <p className='py-2 border-b-2 mx-8'>Send upto 5 GB</p>
           </div>
           <button className='bg-black w-fit rounded-md px-6 py-2 m-6 mx-auto text-green-400 text-md md:text-md font-medium border-2 border-black hover:text-black hover:bg-transparent hover:border-green-400'>
-            Start Trial
+            Buy Now
           </button>
         </div>
 
@@ -54,7 +54,7 @@ export default function Cards() {
             <p className='py-2 border-b-2 mx-8'>Send upto 100 GB</p>
           </div>
           <button className='bg-green-400 w-fit rounded-md px-6 py-2 m-6 mx-auto text-black text-md md:text-md font-medium border-2 border-green-400 hover:text-black hover:bg-transparent hover:border-green-400'>
-            Start Trial
+            Buy Now
           </button>
         </div>
       </div>
