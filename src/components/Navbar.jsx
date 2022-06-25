@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RiMenu3Fill, RiCloseFill } from 'react-icons/ri';
 import { Link } from 'react-scroll';
 
@@ -14,15 +14,21 @@ function Navbar() {
     setNav(false);
   };
 
-  const toggleNavBackground = () => {
-    if (window.scrollY >= 90) {
-      setNavColor(true);
-    } else {
-      setNavColor(false);
-    }
-  };
+  useEffect(() => {
+    const toggleNavBackground = () => {
+      if (window.scrollY >= 90) {
+        setNavColor(true);
+      } else {
+        setNavColor(false);
+      }
+    };
 
-  window.addEventListener('scroll', toggleNavBackground);
+    window.addEventListener('scroll', toggleNavBackground);
+
+    return () => {
+      window.removeEventListener('scroll', toggleNavBackground);
+    };
+  }, []);
 
   return (
     <div
@@ -40,10 +46,10 @@ function Navbar() {
             className='hover:text-yellow-300'
             spy={true}
             smooth={true}
-            exact={true}
-            offset={-80}
+            exact='true'
+            isDynamic={true}
+            offset={-87}
             duration={500}
-            hashSpy
           >
             <li className='p-4 cursor-pointer'>Home</li>
           </Link>
@@ -52,11 +58,11 @@ function Navbar() {
             activeClass='text-yellow-300 border-b-4 border-yellow-300'
             className='hover:text-yellow-300'
             spy={true}
-            exact={true}
+            exact='true'
+            isDynamic={true}
             smooth={true}
-            offset={-80}
+            offset={-87}
             duration={500}
-            hashSpy
           >
             <li className='p-4 cursor-pointer'>Service</li>
           </Link>
@@ -66,10 +72,10 @@ function Navbar() {
             className='hover:text-yellow-300'
             spy={true}
             smooth={true}
-            offset={-80}
+            offset={-87}
+            isDynamic={true}
             duration={500}
-            exact={true}
-            hashSpy
+            exact='true'
           >
             <li className='p-4 cursor-pointer'>Newsletter</li>
           </Link>
@@ -79,10 +85,10 @@ function Navbar() {
             to='pricing'
             spy={true}
             smooth={true}
-            offset={-80}
+            offset={-87}
             duration={500}
-            exact={true}
-            hashSpy
+            isDynamic={true}
+            exact='true'
           >
             <li className='p-4 cursor-pointer'>Pricing</li>
           </Link>
@@ -114,9 +120,10 @@ function Navbar() {
               to='home'
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-100}
+              exact='true'
               duration={500}
-              onClick={handleClick}
+              isDynamic={true}
             >
               <li className='p-4 border-b border-gray-500 cursor-pointer'>
                 Home
@@ -128,8 +135,10 @@ function Navbar() {
               to='service'
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-100}
+              exact='true'
               duration={500}
+              isDynamic={true}
               onClick={handleClick}
             >
               <li className='p-4 border-b border-gray-500 cursor-pointer'>
@@ -142,8 +151,10 @@ function Navbar() {
               to='newsletter'
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-100}
+              exact='true'
               duration={500}
+              isDynamic={true}
               onClick={handleClick}
             >
               <li className='p-4 border-b border-gray-500 cursor-pointer'>
@@ -156,7 +167,9 @@ function Navbar() {
               to='pricing'
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-100}
+              exact='true'
+              isDynamic={true}
               duration={500}
               onClick={handleClick}
             >
