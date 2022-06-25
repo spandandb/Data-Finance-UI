@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Data-Finance-UI/static/css/main.5cde4b0e.css",
-    "main.js": "/Data-Finance-UI/static/js/main.f4eaabe1.js",
+    "main.js": "/Data-Finance-UI/static/js/main.5a7fba20.js",
     "static/media/bg.mp4": "/Data-Finance-UI/static/media/bg.5e99e70107e8538462e6.mp4",
     "static/media/single.png": "/Data-Finance-UI/static/media/single.20196aa3e7e7fa48f8f7.png",
     "static/media/double.png": "/Data-Finance-UI/static/media/double.8be045e6bb88be63d414.png",
@@ -9,10 +9,10 @@
     "static/media/analytics.svg": "/Data-Finance-UI/static/media/analytics.01936911aad6d37613cea0e94a72e367.svg",
     "index.html": "/Data-Finance-UI/index.html",
     "main.5cde4b0e.css.map": "/Data-Finance-UI/static/css/main.5cde4b0e.css.map",
-    "main.f4eaabe1.js.map": "/Data-Finance-UI/static/js/main.f4eaabe1.js.map"
+    "main.5a7fba20.js.map": "/Data-Finance-UI/static/js/main.5a7fba20.js.map"
   },
   "entrypoints": [
     "static/css/main.5cde4b0e.css",
-    "static/js/main.f4eaabe1.js"
+    "static/js/main.5a7fba20.js"
   ]
 }
