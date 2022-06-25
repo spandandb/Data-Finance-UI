@@ -124,6 +124,7 @@ function Navbar() {
               exact='true'
               duration={500}
               isDynamic={true}
+              onClick={handleClick}
             >
               <li className='p-4 border-b border-gray-500 cursor-pointer'>
                 Home
