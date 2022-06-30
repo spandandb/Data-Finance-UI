@@ -7,7 +7,7 @@ export default function Hero() {
     <div id='home'>
       <div className='w-full h-[90vh] top-0'>
         <video
-          className='object-cover h-full w-full absolute -z-10 top-0'
+          className='object-cover h-[130vh] w-full absolute -z-10 top-0'
           src={bgVid}
           autoPlay
           loop
